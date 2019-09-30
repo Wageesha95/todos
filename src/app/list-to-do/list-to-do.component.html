@@ -1,0 +1,24 @@
+<p>list-to-do works!</p>
+
+
+
+<table border = '1'>
+    <caption>My Todo's</caption>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>TargetDate</th>
+            <th>Is Completed</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let todox of Todo">
+        <td>{{todox.id}}</td>
+        <td>{{todox.description}}</td>
+        <td>{{todox.targetDate | date | uppercase}}</td>
+        <td>{{todox.done}}</td>
+        </tr>
+    </tbody>
+</table>
