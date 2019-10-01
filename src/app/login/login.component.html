@@ -1,16 +1,23 @@
 
-<small *ngIf = 'invalidLogin'> Bad Credentials..</small>
 
-<h3></h3>
+<h2>Login!</h2>
+
+<div class="container">
+<div class="alert alert-warning" *ngIf = 'invalidLogin'> Bad Credentials..</div>
+
 
 <div>
-User Name : <input type="text" name = "userName"  [(ngModel)] = "UserName" >
-<h3></h3>
-_Password : <input type="password" name = "password" [(ngModel)] = "Password">
+        <form class="form-inline">
+            User Name :  <input class="form-control" type="text" name = "userName"  [(ngModel)] = "UserName" >
+            <h1></h1>
+            Password  :<input class="form-control" type="password" name = "password" [(ngModel)] = "Password">
+
+        </form>
 </div>
 
-<h3></h3>
+
 
 <!--User Name : {{defaultUserName}}-->
 
-<button (click)=handleLogin()> Login </button>
+<button class="btn btn-success" (click)=handleLogin()> Login </button>
+</div>

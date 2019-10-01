@@ -38,7 +38,7 @@ export class ListToDoComponent implements OnInit {
   Todo = [
    new Todo (1,'Learn Angular',false, new Date()),
     new Todo (2,'Learn Spring',true, new Date()),
-   new Todo (3,'Learn Laraval..........',false, new Date())
+   new Todo (3,'Learn Laraval',false, new Date())
 
  ]
 
