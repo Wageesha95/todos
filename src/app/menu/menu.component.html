@@ -21,14 +21,14 @@
              <a href="http://www.morahiking.com/" class ="navbar-brand">Mora Hiking Club</a>  
 
             <ul class="navbar-nav">
-                <li> <a routerLink="/welcome/thilina" class = "nav-link " class ="navbar-brand" >   Home </a></li>
-                <li> <a routerLink="/todos" class = "nav-link" class ="navbar-brand"> ToDos </a></li>
+                <li> <a *ngIf="hardCodedAuthenticationService.isUserLogedIn()" routerLink="/welcome/thilina" class = "nav-link " class ="navbar-brand" >   Home </a></li>
+                <li> <a *ngIf="hardCodedAuthenticationService.isUserLogedIn()" routerLink="/todos" class = "nav-link" class ="navbar-brand"> ToDos </a></li>
             </ul>
 
 
             <ul class="navbar-nav navbar-collapse justify-content-end">
-                    <li> <a routerLink="/login" class = "nav-link" class ="navbar-brand"  > Login </a></li>
-                    <li> <a routerLink="/logout" class = "nav-link" class ="navbar-brand"  > Logout </a></li>
+                    <li> <a *ngIf="!hardCodedAuthenticationService.isUserLogedIn()" routerLink="/login" class = "nav-link" class ="navbar-brand"  > Login </a></li>
+                    <li> <a *ngIf="hardCodedAuthenticationService.isUserLogedIn()"routerLink="/login" class = "nav-link" class ="navbar-brand"  > Logout </a></li>
                 </ul>
            
             </nav>      
