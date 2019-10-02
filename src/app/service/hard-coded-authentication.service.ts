@@ -24,5 +24,10 @@ isUserLogedIn(){
   return !(user===null)
 }
 
+logout(){
+  sessionStorage.removeItem('authenticateUser');
+
+}
+
 }
 
