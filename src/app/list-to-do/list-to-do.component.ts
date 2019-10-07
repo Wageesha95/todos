@@ -93,7 +93,7 @@ this.todoservice.retriveAllTodos('thusitha').subscribe(
 
 updateTodoId(id){
   this.router.navigate(['todos',id])
-  console.log(`update ${id}`)
+  //console.log(`update ${id}`)
 }
 
 

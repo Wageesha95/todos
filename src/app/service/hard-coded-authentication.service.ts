@@ -11,7 +11,7 @@ authenticate(userName,password){
 
   console.log( "before :" + this.isUserLogedIn());
   if(userName === "Thilina" && password === '0000'){
-    sessionStorage.setItem('authenticateUser',userName)
+    sessionStorage.setItem('authentic ateUser',userName)
     console.log("after :" + this.isUserLogedIn());
     return true
   }
